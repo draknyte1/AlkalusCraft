@@ -1,0 +1,89 @@
+{
+  "book": [
+    {
+      "features": [
+        {
+          "type": "FeatureResource",
+          "properties": {
+            "path": "",
+            "xPos": 39,
+            "yPos": 49,
+            "width": 41.0,
+            "height": 42.0
+          }
+        },
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "AlkalusCraft",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FFD2691E",
+            "xPos": 58,
+            "yPos": 26,
+            "width": 122.0,
+            "height": 12.0
+          }
+        },
+        {
+          "type": "FeatureItem",
+          "properties": {
+            "item": "gregtech:gt.blockmachines 779",
+            "xPos": 25,
+            "yPos": 18,
+            "width": 27.0,
+            "height": 27.0
+          }
+        },
+        {
+          "type": "FeatureJump",
+          "properties": {
+            "jumpTo": "2dsasdc  ",
+            "texture": "",
+            "xPos": 125,
+            "yPos": 72,
+            "width": 50.0,
+            "height": 50.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [
+        {
+          "type": "FeatureText",
+          "properties": {
+            "text": "Lorem ipsum",
+            "wrap": 0,
+            "size": 1.0,
+            "color": "FF555555",
+            "xPos": 77,
+            "yPos": 59,
+            "width": 50.0,
+            "height": 50.0
+          }
+        }
+      ],
+      "pageName": ""
+    },
+    {
+      "features": [],
+      "pageName": ""
+    }
+  ],
+  "displayNames": {
+    "en_US": "Introduction Book"
+  },
+  "uniqueName": "enchiridion.introbook",
+  "color": 16777215,
+  "showBackground": true,
+  "showArrows": true,
+  "showNumber": true,
+  "iconPass1": "",
+  "iconPass2": "",
+  "iconColorisePass1": false,
+  "iconColorisePass2": false,
+  "iconColorPass1": 0,
+  "iconColorPass2": 0
+}

@@ -1,0 +1,104 @@
+{
+  "modid": "BuildCraft|Factory",
+  "segments": [
+    {
+      "class": "buildcraft.builders.TileConstructionMarker",
+      "type": "tileEntity",
+      "hasOwner": true,
+      "flag": "MODIFY",
+      "zMin": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "zMin",
+          "type": "FIELD"
+        }
+      ],
+      "zMax": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "zMax",
+          "type": "FIELD"
+        }
+      ],
+      "xMin": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "xMin",
+          "type": "FIELD"
+        }
+      ],
+      "xMax": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "xMax",
+          "type": "FIELD"
+        }
+      ]
+    },
+    {
+      "class": "buildcraft.core.builders.TileAbstractBuilder",
+      "type": "tileEntity",
+      "hasOwner": true,
+      "flag": "MODIFY",
+      "zMin": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "zMin",
+          "type": "FIELD"
+        }
+      ],
+      "zMax": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "zMax",
+          "type": "FIELD"
+        }
+      ],
+      "xMin": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "xMin",
+          "type": "FIELD"
+        }
+      ],
+      "xMax": [
+        {
+          "element": "getBox",
+          "type": "METHOD"
+        },
+        {
+          "element": "xMax",
+          "type": "FIELD"
+        }
+      ]
+    },
+    {
+      "class": "buildcraft.core.ItemWrench",
+      "type": "item",
+      "itemType": "RIGHT_CLICK_BLOCK",
+      "onAdjacent": false,
+      "flag": "MODIFY"
+    }
+  ]
+}

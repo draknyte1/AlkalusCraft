@@ -1,0 +1,235 @@
+{
+  "modid": "Thaumcraft",
+  "segments": [
+    {
+      "class": "thaumcraft.common.items.wands.ItemWandCasting",
+      "type": "item",
+      "itemType": "RIGHT_CLICK_BLOCK",
+      "onAdjacent": false,
+      "flag": "MODIFY",
+      "range": 30
+    },
+    {
+      "class": "thaumcraft.common.items.wands.ItemWandCasting",
+      "type": "item",
+      "itemType": "RIGHT_CLICK_AIR",
+      "onAdjacent": false,
+      "flag": "USAGE",
+      "range": 20
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityAlumentum",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityBottleTaint",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "MODIFY",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityEldritchOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityEmber",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "MODIFY",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityEmber",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityExplosiveOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityFrostShard",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityGolemOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityPechBlast",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityPrimalOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "EXPLOSIONS",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityShockOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "MODIFY",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.projectile.EntityShockOrb",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": "PVP",
+      "owner": [
+        {
+          "element": "func_85052_h",
+          "type": "METHOD"
+        },
+        {
+          "element": "func_70005_c_",
+          "type": "METHOD"
+        }
+      ],
+      "range": 15
+    },
+    {
+      "class": "thaumcraft.common.entities.monster.EntityWisp",
+      "type": "entity",
+      "entityType": "TRACKED",
+      "flag": {
+        "name": "MOBS",
+        "denialValue": "passives"
+      }
+    }
+  ]
+}
+

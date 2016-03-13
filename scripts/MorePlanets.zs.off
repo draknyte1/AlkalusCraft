@@ -1,0 +1,134 @@
+//Variables of Groups
+val ingotFrozenIron = <ore:ingotFrozenIron>;
+val ingotPalladium = <ore:ingotPalladium>;
+val ingotIridium = <ore:ingotIridium>;
+val ingotNorium = <ore:ingotNorium>;
+val ingotLead = <ore:ingotLead>;
+val gemBlackDiamond = <ore:gemBlackDiamond>;
+val ingotQuontonium = <ore:ingotQuontonium>;
+val ingotFronisium = <ore:ingotFronisium>;
+val ingotSulfur = <ore:ingotSulfur>;
+val ingotKoentusMeteoricIron = <ore:ingotKoentusMeteoricIron>;
+val ingotPolongniusMeteoricIron = <ore:ingotPolongniusMeteoricIron>;
+val ingotUranium = <ore:ingotUranium>;
+val gemRedGem = <ore:gemRedGem>;
+val gemWhiteCrystal = <ore:gemWhiteCrystal>;
+val gemUranium = <ore:gemUranium>;
+val gemXeonium = <ore:gemXeonium>;
+val dustSulfur = <ore:dustSulfur>;
+val ingotMetallic = <ore:ingotMetallic>;
+val ingotMeteoricSteel = <ore:ingotMeteoricSteel>;
+//Plate OreDict
+val itemPlateTier4 = <ore:compressedHeavyDutyPlateT4>;
+val itemPlateTier5 = <ore:compressedHeavyDutyPlateT5>;
+val itemPlateTier6 = <ore:compressedHeavyDutyPlateT6>;
+val itemPlateTier7 = <ore:compressedHeavyDutyPlateT7>;
+val itemPlateTier8 = <ore:compressedHeavyDutyPlateT8>;
+val itemPlateQuontonium = <ore:compressedQuontonium>;
+val itemPlateFronisium = <ore:compressedFronisium>;
+val itemPlatePalladium = <ore:compressedPalladium>;
+val itemPlateIridium = <ore:compressedIridium>;
+val itemPlateSulfur = <ore:compressedSulfur>;
+val itemPlateKoentus = <ore:compressedKoentus>;
+val itemPlatePolongnius = <ore:compressedPolongnius>;
+val itemPlateMetallic = <ore:compressedMetallic>;
+val itemPlateMetalMeteoric = <ore:compressedMeteroicSteel>;
+val itemPlateNorium = <ore:compressedNorium>;
+val itemPlateRedGem = <ore:compressedRedGem>;
+val itemPlateWhiteCrystal = <ore:compressedWhiteCrystal>;
+val itemPlateBlackDiamond = <ore:compressedBlackDiamond>;
+val itemPlateFrozenIron = <ore:compressedFrozenIron>;
+
+//Ingots/Gems to Be grouped
+val itemFrozenIron = <MorePlanet:kapteyn-b_item>;
+val itemPalladium = <MorePlanet:polongnius_item:5>;
+val itemIridium = <MorePlanet:fronos_item:3>;
+val itemNorium = <MorePlanet:nibiru_item:1>;
+val itemLead = <MorePlanet:venus_item>;
+val itemBlackDiamond = <MorePlanet:fronos_item:2>;
+val itemQuontonium = <MorePlanet:diona_item>;
+val itemFronisium = <MorePlanet:diona_item:1>;
+val itemSulfur = <MorePlanet:sirius-b_item:3>;
+val itemKoentusMeteoricIron = <MorePlanet:koentus_item:4>;
+val itemMetallic = <MorePlanet:mercury_item:2>;
+val itemPolongiusMeteoricIron = <MorePlanet:polongnius_item:4>;
+val itemMeteoricSteel = <MorePlanet:mercury_item:3>;
+val itemSulfurDust = <MorePlanet:sirius-b_item:2>;
+val itemWhiteCrystal = <MorePlanet:koentus_item>;
+val itemRedGem = <MorePlanet:nibiru_item>;
+val itemXeoniusGem = <MorePlanet:pluto_item>;
+val itemUraniumGem = <MorePlanet:kapteyn-b_item:1>;
+//Compressed Plates
+val plateTier4 = <MorePlanet:tier_4_rocket_module:1>;
+val plateTier5 = <MorePlanet:diona_item:4>;
+val plateTier6 = <MorePlanet:tier_6_rocket_module:2>;
+val plateTier7 = <MorePlanet:tier_7_rocket_module:2>;
+val plateTier8 = <MorePlanet:tier_8_rocket_module:2>;
+val plateQuontonium = <MorePlanet:diona_item:2>;
+val plateFronisium = <MorePlanet:diona_item:3>;
+val platePalladium = <MorePlanet:polongnius_item:7>;
+val plateIridium = <MorePlanet:fronos_item:5>;
+val plateSulfur = <MorePlanet:sirius-b_item:4>;
+val plateKoentus = <MorePlanet:koentus_item:6>;
+val platePolongnius = <MorePlanet:polongnius_item:6>;
+val plateMetallic = <MorePlanet:mercury_item:4>;
+val plateMetalMeteoric = <MorePlanet:mercury_item:5>;
+val plateNorium = <MorePlanet:nibiru_item:3>;
+val plateRedGem = <MorePlanet:nibiru_item:2>;
+val plateWhiteCrystal = <MorePlanet:koentus_item:5>;
+val plateBlackDiamond = <MorePlanet:fronos_item:4>;
+val plateFrozenIron = <MorePlanet:kapteyn-b_item:2>;
+
+//Small Carbon Dust
+val dustCarbon = <gregtech:gt.metaitem.01:10>;
+
+//OreDict
+ingotFrozenIron.add(itemFrozenIron);
+ingotPalladium.add(itemPalladium);
+ingotIridium.add(itemIridium);
+ingotNorium.add(itemNorium);
+ingotLead.add(itemLead);
+ingotQuontonium.add(itemQuontonium);
+ingotFronisium.add(itemFronisium);
+ingotSulfur.add(itemSulfur);
+ingotKoentusMeteoricIron.add(itemKoentusMeteoricIron);
+ingotPolongniusMeteoricIron.add(itemPolongiusMeteoricIron);
+ingotMetallic.add(itemMetallic);
+ingotMeteoricSteel.add(itemMeteoricSteel);
+ingotUranium.add(itemUraniumGem);
+gemBlackDiamond.add(itemBlackDiamond);
+gemRedGem.add(itemRedGem);
+gemWhiteCrystal.add(itemWhiteCrystal);
+gemXeonium.add(itemXeoniusGem);
+gemUranium.add(itemUraniumGem);
+dustSulfur.add(itemSulfurDust);
+
+//Plate oredict
+itemPlateTier4.add(plateTier4);
+itemPlateTier5.add(plateTier5);
+itemPlateTier6.add(plateTier6);
+itemPlateTier7.add(plateTier7);
+itemPlateTier8.add(plateTier8);
+itemPlateQuontonium.add(plateQuontonium);
+itemPlateFronisium.add(plateFronisium);
+itemPlatePalladium.add(platePalladium);
+itemPlateIridium.add(plateIridium);
+itemPlateSulfur.add(plateSulfur);
+//itemPlateKoentus.add(plateKoentus);
+//itemPlatePolongnius.add(platePolongnius);
+itemPlateMetallic.add(plateMetallic);
+itemPlateMetalMeteoric.add(plateMetalMeteoric);
+//itemPlateNorium.add(plateNorium);
+//itemPlateRedGem.add(plateRedGem);
+//itemPlateWhiteCrystal.add(plateWhiteCrystal);
+//itemPlateBlackDiamond.add(plateBlackDiamond);
+//itemPlateFrozenIron.add(plateFrozenIron);
+
+
+
+
+
+
+
+//Electric Ingot Compressor
+recipes.addShaped(<GalacticraftCore:tile.machine2>, [[<miscutils:itemPlateElectricalSteel>, <ore:plateAluminium>, <miscutils:itemPlateElectricalSteel>], [<miscutils:itemPlateElectricalSteel>, <GalacticraftMars:item.null:5>, <miscutils:itemPlateElectricalSteel>], [<GalacticraftCore:tile.aluminumWire:1>, <gregtech:gt.metaitem.01:32705>, <GalacticraftCore:tile.aluminumWire:1>]]);
