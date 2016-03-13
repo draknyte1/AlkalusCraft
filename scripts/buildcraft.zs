@@ -9,11 +9,11 @@ import mods.ic2.Compressor;
 
 # Aliases
 var BCGearWood = <BuildCraft|Core:woodenGearItem>;
+var ironPlate = <ore:plateAnyIron>;
 var BCGearStone = <BuildCraft|Core:stoneGearItem>;
 var BCGearIron = <BuildCraft|Core:ironGearItem>;
 var BCGearGold = <BuildCraft|Core:goldGearItem>;
 var BCGearDiamond = <BuildCraft|Core:diamondGearItem>;
-var gregWrench = <ore:craftingToolWrench>;
 var plankWood = <ore:plankWood>;
 var glass = <minecraft:glass>;
 var GTGearWood = <gregtech:gt.metaitem.02:31809>;
@@ -23,20 +23,20 @@ var GTGearGold = <gregtech:gt.metaitem.02:31086>;
 var GTGearDiamond = <gregtech:gt.metaitem.02:31500>;
 var piston = <minecraft:piston>;
 var craftingTable = <minecraft:crafting_table>;
-var engineRedstone = <BuildCraft|Energy:engineBlock>;
+var engineRedstone = <BuildCraft|Core:engineBlock>;
 var workbenchAuto = <BuildCraft|Factory:autoWorkbenchBlock>;
 var BCWrench = <BuildCraft|Core:wrenchItem>;
-var engineStirling = <BuildCraft|Energy:engineBlock:1>;
+var engineStirling = <BuildCraft|Core:engineBlock:1>;
 var chute = <BuildCraft|Factory:blockHopper>;
-var engineCombustion = <BuildCraft|Energy:engineBlock:2>;
+var engineCombustion = <BuildCraft|Core:engineBlock:2>;
 var miningWell = <BuildCraft|Factory:miningWellBlock>;
 var floodGate = <BuildCraft|Factory:floodGateBlock>;
 var BCTank = <BuildCraft|Factory:tankBlock>;
 var gateBasic = <BuildCraft|Transport:pipeGate>;
 var pipeKinesisDiamond = <BuildCraft|Transport:item.buildcraftPipe.pipepowerdiamond>;
 var filler = <BuildCraft|Builders:fillerBlock>;
-var landMark = <BuildCraft|Builders:markerBlock>;
-var quarry = <BuildCraft|Factory:machineBlock>;
+var landMark = <BuildCraft|Core:markerBlock>;
+var quarry = <BuildCraft|Builders:machineBlock>;
 var builder = <BuildCraft|Builders:builderBlock>;
 var architectTable = <BuildCraft|Builders:architectBlock>;
 var assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
@@ -61,8 +61,8 @@ var drillDiamond = <IC2:itemToolDDrill:*>;
 var obsidian = <minecraft:obsidian>;
 var diamond = <minecraft:diamond>;
 var redstoneTorch = <minecraft:redstone_torch>;
-var requester = <BuildCraft|Silicon:requester>;
-var zonePlanner = <BuildCraft|Silicon:zonePlan>;
+var requester = <BuildCraft|Robotics:requester>;
+var zonePlanner = <BuildCraft|Robotics:zonePlan>;
 var mapEmpty = <minecraft:map>;
 var pipeStripesTransportAll = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:*>;
 var pipeStripesTransportWhite = <BuildCraft|Transport:item.buildcraftPipe.pipeitemsstripes:1>;
@@ -110,8 +110,11 @@ recipes.remove(BCGearGold);
 NEI.hide(BCGearGold);
 recipes.remove(BCGearDiamond);
 NEI.hide(BCGearDiamond);
+recipes.remove(<Railcraft:part.plate>);
+NEI.hide(<Railcraft:part.plate>);
+recipes.remove(<Railcraft:part.plate:1>);
+NEI.hide(<Railcraft:part.plate:1>);
 
-gregWrench.add(BCWrench);
 
 # Recipe Changes
 recipes.remove(pipeStripesTransportAll);
@@ -149,14 +152,14 @@ recipes.addShaped(pipeStripesTransportBlack, [
     [GTGearGold, stainedGlassBlack, GTGearGold]]);
 recipes.remove(zonePlanner);
 recipes.addShaped(zonePlanner, [    
-    [ingotIron, redstone, ingotIron],
+    [ironPlate, redstone, ironPlate],
     [GTGearGold, mapEmpty, GTGearGold],
-    [ingotIron, GTGearDiamond, ingotIron]]);
+    [ironPlate, GTGearDiamond, ironPlate]]);
 recipes.remove(requester);
 recipes.addShaped(requester, [
-    [ingotIron, piston, ingotIron],
+    [ironPlate, piston, ironPlate],
     [GTGearIron, chestWood, GTGearIron],
-    [ingotIron, redstone, ingotIron]]);
+    [ironPlate, redstone, ironPlate]]);
 recipes.remove(engineRedstone);
 recipes.addShaped(engineRedstone, [
 	[plankWood, plankWood, plankWood],
@@ -169,12 +172,12 @@ recipes.addShaped(workbenchAuto, [
 	[null, GTGearWood, null]]);
 recipes.remove(BCWrench);
 recipes.addShaped(BCWrench, [
-	[ingotIron, null, ingotIron],
+	[ironPlate, null, ironPlate],
 	[null, GTGearStone, null],
-	[null, ingotIron, null]]);
+	[null, ironPlate, null]]);
 recipes.remove(engineStirling);
 recipes.addShaped(engineStirling, [
-	[cobblestone, cobblestone, cobblestone],
+	[ironPlate, ironPlate, ironPlate],
 	[null, glass, null],
 	[GTGearStone, piston, GTGearStone]]);
 recipes.remove(chute);
@@ -188,19 +191,19 @@ recipes.addShaped(chute, [
 	[null, plateIron, hammer]]);
 recipes.remove(engineCombustion);
 recipes.addShaped(engineCombustion, [
-	[ingotIron, ingotIron, ingotIron],
+	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
 	[null, glass, null],
 	[GTGearIron, piston, GTGearIron]]);
 recipes.remove(miningWell);
 recipes.addShaped(miningWell, [
-	[ingotIron, redstone, ingotIron],
-	[ingotIron, GTGearIron, ingotIron],
-	[ingotIron, pickaxeIron, ingotIron]]);
+	[ironPlate, redstone, ironPlate],
+	[ironPlate, GTGearIron, ironPlate],
+	[ironPlate, pickaxeIron, ironPlate]]);
 recipes.remove(floodGate);
 recipes.addShaped(floodGate, [
-	[ingotIron, GTGearIron, ingotIron],
+	[ironPlate, GTGearIron, ironPlate],
 	[ironBars, BCTank, ironBars],
-	[ingotIron, ironBars, ingotIron]]);
+	[ironPlate, ironBars, ironPlate]]);
 recipes.remove(filler);
 recipes.addShaped(filler, [
 	[dyeBlack, landMark, dyeBlack],
@@ -226,13 +229,13 @@ recipes.addShaped(architectTable, [
 	[GTGearDiamond, blueprint, GTGearDiamond]]);
 recipes.remove(assemblyTable);
 recipes.addShaped(assemblyTable, [
-	[obsidian, redstone, obsidian],
-	[obsidian, diamond, obsidian],
+	[<ore:plateObsidian>, redstone, <ore:plateObsidian>],
+	[<ore:plateObsidian>, diamond, <ore:plateObsidian>],
 	[obsidian, GTGearDiamond, obsidian]]);
 recipes.remove(integrationTable);
 recipes.addShaped(integrationTable, [
-	[obsidian, redstone, obsidian],
-	[obsidian, chipsetRedstone, obsidian],
+	[<ore:plateObsidian>, redstone, <ore:plateObsidian>],
+	[<ore:plateObsidian>, chipsetRedstone, <ore:plateObsidian>],
 	[obsidian, GTGearDiamond, obsidian]]);
 recipes.remove(BCRefinery);
 recipes.addShaped(BCRefinery, [
