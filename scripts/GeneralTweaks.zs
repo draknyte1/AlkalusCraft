@@ -41,6 +41,7 @@ var elementCl = <minechem:minechemElement:17>;
 var elementNa = <minechem:minechemElement:11>;
 var oredictLead = <ore:ingotLead>;
 var railcraftLead = <Railcraft:ingot:3>;
+val MCbed = <minecraft:bed>;
 
 //RainMakerValues
 val rainmaker = <rainmaker:RainMakerMachine>;
@@ -77,6 +78,7 @@ recipes.removeShaped(quarryUpgradeFortune);
 
 
 //change names
+bed.displayName = "Bed - [Can Right click to set spawn 24/7]";
 steveTable.displayName = "Production Table";
 quarryMachine.displayName = "Quarry [IC2] - Not for GregTech-EU";
 quarryUpgradeSilk.displayName = "UPGRADE - Silk Touch";
