@@ -4,6 +4,7 @@ import mods.minechem.Decomposer;
 import mods.minechem.Synthesiser;
 import mods.minechem.Chemicals;
 import mods.minechem.Fuels;
+import mods.nei.NEI;
 
 val rawCarbon = <IC2:itemPartCarbonMesh>;
 val plateRubber = <gregtech:gt.metaitem.01:17880>;
@@ -78,13 +79,16 @@ recipes.removeShaped(quarryUpgradeFortune);
 
 
 //change names
-bed.displayName = "Bed - [Can Right click to set spawn 24/7]";
+MCbed.displayName = "Bed";
+NEI.addEntry(<minecraft:bed>.withTag({display: {Name: "Comfy Bed", Lore: ["You can Right click this,", "to set spawn 24/7"]}}));
 steveTable.displayName = "Production Table";
 quarryMachine.displayName = "Quarry [IC2] - Not for GregTech-EU";
 quarryUpgradeSilk.displayName = "UPGRADE - Silk Touch";
 quarryUpgradeFortune.displayName = "UPGRADE - Fortune III";
 steelCasing.displayName = "Steel Item Casing";
+NEI.overrideName(<IC2:itemCasing:5>, "Steel Item Casing");
 steelShaft.displayName = "Shaft (Steel)";
+NEI.overrideName(<IC2:itemRecipePart:12>, "Shaft (Steel)");
 
 
 //re-add recipes
