@@ -1,0 +1,18 @@
+{
+  "name" : "AlkalusCraft",
+  "title" : "AlkalusCraft",
+  "gameVersion" : "1.7.10",
+  "features" : [ ],
+  "userFiles" : {
+    "include" : [
+      "options.txt",
+      "optionsshaders.txt"
+    ],
+    "exclude" : [ ]
+  },
+  "launch" : {
+    "flags" : [
+      "-Dfml.ignoreInvalidMinecraftCertificates=true"
+    ]
+  }
+}
