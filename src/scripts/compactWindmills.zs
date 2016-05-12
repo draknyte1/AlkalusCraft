@@ -4,8 +4,6 @@
 //	[null, null, null]]);
 
 //Change IC2 Upgrades
-
-val lvplaceholder = <gregtech:gt.blockcasings:12>;
 val kineticWind = <IC2:blockKineticGenerator>;
 val shaftIron = <IC2:itemRecipePart:11>;
 val cableCopper = <gregtech:gt.blockmachines:1367>;
@@ -17,6 +15,7 @@ val lvCasing = <gregtech:gt.blockcasings:1>;
 val mvCasing = <gregtech:gt.blockcasings:2>;
 val hvCasing = <gregtech:gt.blockcasings:3>;
 val evCasing = <gregtech:gt.blockcasings:4>;
+val ivCasing = <gregtech:gt.blockcasings:5>;
 
 //GT Transformers
 val elvTransformer = <gregtech:gt.blockmachines:20>;
@@ -31,6 +30,25 @@ val lvWindmill = <CompactWindmills:blockCompactWindmill:1>;
 val mvWindmill = <CompactWindmills:blockCompactWindmill:2>;
 val hvWindmill = <CompactWindmills:blockCompactWindmill:3>;
 val evWindmill = <CompactWindmills:blockCompactWindmill:4>;
+val rotor1 = <CompactWindmills:WOOL>;
+val rotor2 = <CompactWindmills:WOOD>;
+val rotor3 = <CompactWindmills:ALLOY>;
+val rotor4 = <CompactWindmills:CARBON>;
+val rotor5 = <CompactWindmills:IRIDIUM>;
+
+//Plates
+val plateTier1 = <ore:plateMagnalium>;
+val plateTier2 = <ore:plateStainlessSteel>;
+val plateTier3 = <ore:plateTitanium>;
+val plateTier4 = <ore:plateTungstenSteel>;
+val plateTier5 = <ore:plateNichrome>;
+
+//Circuits
+val circuitTier1 = <ore:circuitGood>:
+val circuitTier2 = <ore:circuitAdvanced>:
+val circuitTier3 = <ore:circuitData>:
+val circuitTier4 = <ore:circuitElite>:
+val circuitTier5 = <ore:circuitMaster>:
 
 //Removals
 recipes.removeShaped(kineticWind);
@@ -50,30 +68,30 @@ recipes.addShaped(kineticWind * 1, [
 	
 //ELV Windmill
 recipes.addShaped(elvWindmill * 1, [
-	[elvTransformer, lvplaceholder, null],
-	[lvplaceholder, elvCasing, lvplaceholder],
-	[null, lvplaceholder, elvTransformer]]);
+	[circuitTier1, elvTransformer, circuitTier1],
+	[plateTier1, lvCasing, plateTier1],
+	[plateTier1, rotor1, plateTier1]]);
 	
 //LV Windmill
 recipes.addShaped(lvWindmill * 1, [
-	[lvTransformer, elvWindmill, null],
-	[elvWindmill, lvCasing, elvWindmill],
-	[null, elvWindmill, lvTransformer]]);
+	[circuitTier2, lvTransformer, circuitTier2],
+	[plateTier2, mvCasing, plateTier2],
+	[plateTier2, rotor2, plateTier2]]);
 	
 //MV Windmill
 recipes.addShaped(mvWindmill * 1, [
-	[mvTransformer, lvWindmill, null],
-	[lvWindmill, mvCasing, lvWindmill],
-	[null, lvWindmill, mvTransformer]]);
+	[circuitTier3, mvTransformer, circuitTier3],
+	[plateTier3, hvCasing, plateTier3],
+	[plateTier3, rotor3, plateTier3]]);
 	
 //HV Windmill
 recipes.addShaped(hvWindmill * 1, [
-	[hvTransformer, mvWindmill, null],
-	[mvWindmill, hvCasing, mvWindmill],
-	[null, mvWindmill, hvTransformer]]);
+	[circuitTier4, hvTransformer, circuitTier4],
+	[plateTier4, evCasing, plateTier4],
+	[plateTier4, rotor4, plateTier4]]);
 	
 //EV Windmill
 recipes.addShaped(evWindmill * 1, [
-	[evTransformer, hvWindmill, null],
-	[hvWindmill, evCasing, hvWindmill],
-	[null, hvWindmill, evTransformer]]);
+	[circuitTier5, evTransformer, circuitTier5],
+	[plateTier5, ivCasing, plateTier5],
+	[plateTier5, rotor5, plateTier5]]);
