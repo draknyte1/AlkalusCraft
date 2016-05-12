@@ -55,7 +55,7 @@ val plateTier3 = <ore:plateTitanium>;
 val plateTier4 = <ore:plateTungstenSteel>;
 val plateTier5 = <ore:plateNichrome>;
 val plateCarbon = <ore:plateAlloyCarbon>;
-val plateAlloy = <ore:plateAdvancedAlloy>;
+val plateAlloy = <ore:plateAlloyAdvanced>;
 
 //Circuits
 val circuitTier1 = <ore:circuitGood>;
