@@ -44,11 +44,11 @@ val plateTier4 = <ore:plateTungstenSteel>;
 val plateTier5 = <ore:plateNichrome>;
 
 //Circuits
-val circuitTier1 = <ore:circuitGood>:
-val circuitTier2 = <ore:circuitAdvanced>:
-val circuitTier3 = <ore:circuitData>:
-val circuitTier4 = <ore:circuitElite>:
-val circuitTier5 = <ore:circuitMaster>:
+val circuitTier1 = <ore:circuitGood>;
+val circuitTier2 = <ore:circuitAdvanced>;
+val circuitTier3 = <ore:circuitData>;
+val circuitTier4 = <ore:circuitElite>;
+val circuitTier5 = <ore:circuitMaster>;
 
 //Removals
 recipes.removeShaped(kineticWind);
