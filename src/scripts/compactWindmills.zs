@@ -30,11 +30,23 @@ val lvWindmill = <CompactWindmills:blockCompactWindmill:1>;
 val mvWindmill = <CompactWindmills:blockCompactWindmill:2>;
 val hvWindmill = <CompactWindmills:blockCompactWindmill:3>;
 val evWindmill = <CompactWindmills:blockCompactWindmill:4>;
-val rotor1 = <CompactWindmills:WOOL>;
-val rotor2 = <CompactWindmills:WOOD>;
+
+//Compact Rotors
+val rotor2 = <CompactWindmills:WOOL>;
+val rotor1 = <CompactWindmills:WOOD>;
 val rotor3 = <CompactWindmills:ALLOY>;
 val rotor4 = <CompactWindmills:CARBON>;
 val rotor5 = <CompactWindmills:IRIDIUM>;
+
+//IC2 Rotors
+val rotorIC1 = <IC2:itemwoodrotor>;
+val rotorIC2 = <IC2:itemironrotor>;
+val rotorIC3 = <IC2:itemsteelrotor>;
+val rotorIC4 = <IC2:itemwcarbonrotor>;
+val rotorBlade1 = <IC2:itemRecipePart:7>;
+val rotorBlade2 = <IC2:itemRecipePart:8>;
+val rotorBlade3 = <IC2:itemRecipePart:10>;
+val rotorBlade4 = <IC2:itemRecipePart:9>;
 
 //Plates
 val plateTier1 = <ore:plateMagnalium>;
@@ -42,6 +54,8 @@ val plateTier2 = <ore:plateStainlessSteel>;
 val plateTier3 = <ore:plateTitanium>;
 val plateTier4 = <ore:plateTungstenSteel>;
 val plateTier5 = <ore:plateNichrome>;
+val plateCarbon = <ore:plateAlloyCarbon>;
+val plateAlloy = <ore:plateAdvancedAlloy>;
 
 //Circuits
 val circuitTier1 = <ore:circuitGood>;
@@ -57,14 +71,36 @@ recipes.removeShaped(lvWindmill);
 recipes.removeShaped(mvWindmill);
 recipes.removeShaped(hvWindmill);
 recipes.removeShaped(evWindmill);
+recipes.removeShaped(rotor1);
+recipes.removeShaped(rotor3);
+recipes.removeShaped(rotor4);
 
 
 //Recipes
+
+//Wooden Rotor
+recipes.addShaped(rotor1 * 1, [
+	[rotorBlade1, <ore:plateAnyIron>, rotorBlade1],
+	[<ore:screwAluminium>, rotorIC1, <ore:screwAluminium>],
+	[rotorBlade1, <ore:plateAnyIron>, rotorBlade1]]);
+
+//Alloy Rotor
+recipes.addShaped(rotor3 * 1, [
+	[plateAlloy, plateAlloy, plateAlloy],
+	[plateAlloy, rotorIC3, plateAlloy],
+	[plateAlloy, plateAlloy, plateAlloy]]);
+
+//Carbon Rotor
+recipes.addShaped(rotor4 * 1, [
+	[plateCarbon, rotorBlade4, plateCarbon],
+	[rotorBlade4, rotor3, rotorBlade4],
+	[plateCarbon, rotorBlade4, plateCarbon]]);
+
 //Kinetic Wind Turbine
 recipes.addShaped(kineticWind * 1, [
-	[plateRubber, shaftIron, plateRubber],
+	[plateCarbon, shaftIron, plateCarbon],
 	[cableCopper, mvCasing, cableCopper],
-	[plateRubber, shaftIron, plateRubber]]);
+	[plateRubber, plateCarbon, plateRubber]]);
 	
 //ELV Windmill
 recipes.addShaped(elvWindmill * 1, [
