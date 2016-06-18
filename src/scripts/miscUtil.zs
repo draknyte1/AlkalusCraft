@@ -452,3 +452,8 @@ val dustUranium238 = <ore:dustUranium>;
 val dustStaballoy = <gregtech:gt.metaitem.01:2319>;
 
 recipes.addShapeless(dustStaballoy * 2, [dustTitanium, dustUranium238, dustUranium238, dustUranium238, dustUranium238, dustUranium238, dustUranium238, dustUranium238, dustUranium238]);
+
+//End Stone
+//Chemical Bath
+//OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+mods.gregtech.ChemicalBath.addRecipe([<minecraft:end_stone>], <minecraft:sandstone>, <liquid:molten.enderium> * 50, [10000], 2000, 16);

@@ -55,6 +55,8 @@ var pickaxeIron = <minecraft:iron_pickaxe>;
 var ironBars = <minecraft:iron_bars>;
 var dyeBlack = <ore:dyeBlack>;
 var dyeYellow = <ore:dyeYellow>;
+var dyeCyan = <ore:dyeCyan>;
+var dyeBlue = <ore:dyeBlue>;
 var GTGearSteel = <gregtech:gt.metaitem.02:31305>;
 var circuitAdvanced = <ore:circuitAdvanced>;
 var drillDiamond = <IC2:itemToolDDrill:*>;
@@ -117,6 +119,15 @@ NEI.hide(<Railcraft:part.plate:1>);
 
 
 # Recipe Changes
+recipes.remove(landMark);
+recipes.addShaped(landMark, [
+	[dyeCyan, null, null],
+	[redstoneTorch, null, null],
+	[null, null, null]]);
+recipes.addShaped(landMark, [
+	[dyeBlue, null, null],
+	[redstoneTorch, null, null],
+	[null, null, null]]);
 recipes.remove(pipeStripesTransportAll);
 recipes.addShaped(pipeStripesTransportWhite, [
     [GTGearGold, stainedGlassWhite, GTGearGold]]);

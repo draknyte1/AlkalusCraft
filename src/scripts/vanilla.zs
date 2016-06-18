@@ -28,6 +28,7 @@ var rubberLog = <IC2:blockRubWood>;
 var hardSand = <BiomesOPlenty:hardSand>;
 var button = <minecraft:stone_button>;
 var stoneBlock = <minecraft:stone>;
+var ironBars = <minecraft:iron_bars>;
 
 # Ore Dictionary
 gemNetherQuartz.add(<appliedenergistics2:item.ItemMultiMaterial:11>);
@@ -65,3 +66,7 @@ recipes.addShaped(sensorDaylight, [
     [glass, glass, glass],
     [gemNetherQuartz, gemNetherQuartz, gemNetherQuartz],
     [slabWood, slabWood, slabWood]]);
+recipes.addShaped(ironBars * 8, [
+	[null, <ore:craftingToolWrench>, null],
+    [<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:stickAnyIron>],
+    [<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:stickAnyIron>]]);
