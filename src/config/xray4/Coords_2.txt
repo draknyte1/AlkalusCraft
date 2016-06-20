@@ -1,3 +1,0 @@
-$d{FPS}
-$aXYZ: {X} / {Y} / {Z}
-$c{Fly}

@@ -57,3 +57,52 @@ recipes.addShaped(recipe_axe, [
 	[densePlate, densePlate, null],
 	[densePlate, <ore:stickLongTungstenSteel>, null],
 	[null, <ore:stickLongTungstenSteel>, null]]);
+	
+//Add GalactiCraft/MorePlanets compressed ingots, plates and blocks for rocket building to PneumaticCraft Compression Chamber recipe list.
+
+//Miscellaneous items
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11035> * 2], 1, [<GalacticraftCore:item.basicItem:6>], true);     //Copper
+
+//Tier 1 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11057> * 2], 1, [<GalacticraftCore:item.basicItem:7>], true);     //Tin
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11019> * 2], 1, [<GalacticraftCore:item.basicItem:8>], true);     //Aluminium
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11305> * 2], 1, [<GalacticraftCore:item.basicItem:9>], true);     //Steel
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11300> * 2], 1, [<GalacticraftCore:item.basicItem:10>], true);     //Bronze
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11305> * 1, <gregtech:gt.metaitem.01:11019> * 2, <gregtech:gt.metaitem.01:11300> * 2], 1, [<GalacticraftCore:item.heavyPlating>], true);
+
+//Tier 2 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11340>], 1, [<GalacticraftCore:item.meteoricIronIngot:1>], true);     //Meteoric Iron
+mods.pneumaticcraft.Pressure.addRecipe([<GalacticraftCore:item.heavyPlating>, <GalacticraftCore:item.meteoricIronIngot:1>], 1, [<GalacticraftMars:item.null:3>], true);
+
+//Tier 3 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<GalacticraftMars:item.null:2>], 2, [<GalacticraftMars:item.null:5>], true);     //Desh
+mods.pneumaticcraft.Pressure.addRecipe([<GalacticraftMars:item.null:3>, <GalacticraftMars:item.null:5>], 2, [<GalacticraftMars:item.itemBasicAsteroids>], true);     //T3 plate
+
+//Tier 4 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11028> * 2], 2, [<GalacticraftMars:item.itemBasicAsteroids:6>], true);     //Titanium
+mods.pneumaticcraft.Pressure.addRecipe([<minecraft:diamond> * 9], 2, [<minecraft:diamond_block>], true);
+mods.pneumaticcraft.Pressure.addRecipe([<GalacticraftMars:item.itemBasicAsteroids>, <GalacticraftMars:item.itemBasicAsteroids:6>], 2, [<MorePlanet:tier_4_rocket_module:1>], true);     //T4 plate
+
+//Tier 5 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:diona_item> * 9], 3, [<MorePlanet:diona_block:10>], true);     //Quontonium Block
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:diona_item:1> * 2], 3, [<MorePlanet:diona_item:3>], true);     //Fronsium
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:diona_item> * 2], 3, [<MorePlanet:diona_item:2>], true);     //Quontonium
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:tier_4_rocket_module:1>, <MorePlanet:diona_item:3>, <MorePlanet:diona_item:2>], 3, [<MorePlanet:diona_item:4>], true);     //T5 plate
+
+//Tier 6 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:polongnius_item:1> * 9], 3, [<MorePlanet:polongnius_block:11>], true);     //Purple Crystal Block
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:polongnius_item:5> * 2], 3, [<MorePlanet:polongnius_item:7>], true);     //Palladium
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:polongnius_item:4> * 2], 3, [<MorePlanet:polongnius_item:6>], true);     //Polognius Meteoric Iron
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:polongnius_item:7>, <MorePlanet:polongnius_item:6>, <MorePlanet:diona_item:4>], 3, [<MorePlanet:tier_6_rocket_module:2>], true);     //T6 plate
+
+//Tier 7 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:nibiru_item:1> * 9], 4, [<MorePlanet:nibiru_block:10>], true);     //Norium Block
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:nibiru_item:1> * 2], 4, [<MorePlanet:nibiru_item:3>], true);     //Norium
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:nibiru_item> * 2], 4, [<MorePlanet:nibiru_item:2>], true);     //Red Crystal
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:nibiru_item:3>, <MorePlanet:nibiru_item:2>, <MorePlanet:tier_6_rocket_module:2>], 4, [<MorePlanet:tier_7_rocket_module:2>], true);     //T7 plate
+
+//Tier 8 Rocket compressed items
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:fronos_item:3> * 9], 4, [<MorePlanet:fronos_ore_block>], true);     //Iridium Block
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:fronos_item:2> * 2], 4, [<MorePlanet:fronos_item:4>], true);     //Black Diamond
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:fronos_item:3> * 2], 4, [<MorePlanet:fronos_item:5>], true);     //Iridium
+mods.pneumaticcraft.Pressure.addRecipe([<MorePlanet:fronos_item:4>, <MorePlanet:fronos_item:5>, <MorePlanet:tier_7_rocket_module:2>], 4, [<MorePlanet:tier_8_rocket_module:2>], true);     //T8 plate
