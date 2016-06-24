@@ -77,3 +77,10 @@ recipes.addShaped(PCBBluePrint, [
     [<ore:plateCompressedIron>, capacitor, <ore:plateCompressedIron>],
     [<ore:plateLazurite>, gearStone, <ore:plateLazurite>],
     [<ore:plateCompressedIron>, capacitor, <ore:plateCompressedIron>]]);
+	//PneumaticCraft. Make "Minigun Ammo" use brass instead of gold.
+val pcammo = <PneumaticCraft:gunAmmo>;
+recipes.removeShaped(pcammo);
+recipes.addShaped(pcammo, [
+ [<ore:dustGunpowder>, <ore:ingotIronCompressed>, null],
+ [<ore:plateBrass>, null, null],
+ [null, null, null]]);

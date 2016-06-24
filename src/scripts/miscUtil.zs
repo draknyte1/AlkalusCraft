@@ -42,6 +42,9 @@ oreDictPlateBedrockium.add(<miscutils:itemPlateBedrockium>);
 oreDictPlateCompressedIron.add(<miscutils:itemPlateCompressedIron>);
 
 
+furnace.addRecipe(<minecraft:coal:1>, <ore:logWood>, 0.5);
+
+
 
 // --- Adding Plate Bending Recipes ---
 //EnderIO

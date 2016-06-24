@@ -70,3 +70,11 @@ recipes.addShaped(ironBars * 8, [
 	[null, <ore:craftingToolWrench>, null],
     [<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:stickAnyIron>],
     [<ore:stickAnyIron>, <ore:stickAnyIron>, <ore:stickAnyIron>]]);
+	
+//Minecraft core. Add saddle as a craftable item.
+val mcsaddle = <minecraft:saddle>;
+recipes.removeShaped(mcsaddle);
+recipes.addShaped(mcsaddle, [
+ [<minecraft:string>, null, null],
+ [<ore:itemLeather>, <ore:materialHardenedleather>, <ore:itemLeather>],
+ [null, <ore:ringAnyIron>, null]]);
