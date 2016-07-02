@@ -14,6 +14,7 @@ var plateObsidian = <ore:plateObsidian>;
 var ingotEnderium = <ore:ingotEnderium>;
 var teleporter = <IC2:blockMachine2>;
 var enderEye = <minecraft:ender_eye>;
+var HEE_enderPearl = <HardcoreEnderExpansion:enhanced_ender_pearl>;
 var enderPearl = <minecraft:ender_pearl>;
 var blazePowder = <minecraft:blaze_powder>;
 var slabWood = <ore:slabWood>;
@@ -38,12 +39,13 @@ oreDict.logWood.add(rubberLog);
 oreDict.sand.add(hardSand);
 
 # Recipes Tweaks
-recipes.removeShapeless(enderEye, [enderPearl, blazePowder]);
+recipes.removeShapeless(enderEye, [HEE_enderPearl, blazePowder]);
 recipes.removeShapeless(blazePowder, [blazeRod]);
-recipes.addShapeless(blazePowder, [blazeRod]);
 recipes.removeShapeless(stoneStick, [stoneBlock]);
 recipes.remove(chestWood * 4);
 recipes.remove(button * 2);
+recipes.addShapeless(enderEye, [enderPearl, blazePowder]);
+recipes.addShapeless(blazePowder, [blazeRod]);
 recipes.addShaped(button * 2, [
     [null, stoneBlock, null],
     [null, stoneBlock, null],
