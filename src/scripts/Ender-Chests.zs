@@ -68,7 +68,7 @@ mods.thaumcraft.Research.addPage("ENDERCHEST", "EnderStorage.research_page.ENDER
 game.setLocalization("en_US", "EnderStorage.research_page.ENDERCHEST", "The Ender Chest is a block that allows the player to store 27 items much like a wooden chest however, if two Ender Chests are placed down in different places, the items inside chest A will be in chest B. If the items are taken from either chest, both of the chest will not have that item. While on SMP, players will share the same storage, so use different coloured dyes to utilize one of many combinations. A diamond can be used on the chests lock to prevent players form stealing more valuable items, as they cannot access the same items. This also means two players can store items in the same ender chest.");
 mods.thaumcraft.Arcane.addShaped("ENDERCHEST", <EnderStorage:enderChest>, "aer 32, aqua 32, ignis 32, terra 32, ordo 8", [
 [<gregtech:gt.metaitem.01:22330>, <gregtech:gt.metaitem.01:22321>, <gregtech:gt.metaitem.01:22330>],
-[<gregtech:gt.metaitem.01:32683>, chestVanilla, <gregtech:gt.metaitem.01:32693>],
+[<gregtech:gt.metaitem.01:32682>, chestVanilla, <gregtech:gt.metaitem.01:32692>],
 [<gregtech:gt.metaitem.01:22330>, <gregtech:gt.metaitem.01:22321>, <gregtech:gt.metaitem.01:22330>]]);
 mods.thaumcraft.Research.addArcanePage("ENDERCHEST", <EnderStorage:enderChest>);
 mods.thaumcraft.Warp.addToResearch("ENDERCHEST", 2);
