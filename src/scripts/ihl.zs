@@ -13,8 +13,6 @@ var cableElectrum8x = <gregtech:gt.blockmachines:1449>;
 
 # Recipe Fixes
 recipes.remove(ihlACE);
-recipes.remove(IHLhammer);
-NEI.hide(<ihl:item.ihlTool:3>.withTag({"GT.ToolStats": {MaxDamage: 20000}}));
 NEI.hide(forgeHammer);
 recipes.addShaped(ihlACE, [
     [plateLapis, glass, plateLapis],
