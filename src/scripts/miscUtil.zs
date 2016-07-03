@@ -460,3 +460,16 @@ recipes.addShapeless(dustStaballoy * 2, [dustTitanium, dustUranium238, dustUrani
 //Chemical Bath
 //OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
 mods.gregtech.ChemicalBath.addRecipe([<minecraft:end_stone>], <minecraft:sandstone>, <liquid:molten.enderium> * 50, [10000], 2000, 16);
+
+val frameAccelerated = <miscutils:frameAccelerated>;
+val frameMutagenic = <miscutils:frameMutagenic>;
+
+recipes.addShaped(frameAccelerated * 1, [
+	[<ore:stickLongElectrumFlux>, <ore:stickElectrumFlux>, <ore:stickLongElectrumFlux>],
+	[<ore:stickLongElectrumFlux>, <ore:foilElectrum>, <ore:stickLongElectrumFlux>],
+	[<ore:stickElectrumFlux>, <ore:stickElectrumFlux>, <ore:stickElectrumFlux>]]);
+	
+recipes.addShaped(frameMutagenic * 1, [
+	[<ore:stickLongUranium>, <ore:stickUranium>, <ore:stickLongUranium>],
+	[<ore:stickLongUranium>, <gendustry:HoneyComb:141>, <ore:stickLongUranium>],
+	[<ore:stickUranium>, <ore:stickUranium>, <ore:stickUranium>]]);
