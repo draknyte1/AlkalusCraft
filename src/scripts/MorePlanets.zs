@@ -60,15 +60,16 @@ recipes.addShaped(recipe_axe, [
 	
 //Add GalactiCraft/MorePlanets compressed ingots, plates and blocks for rocket building to PneumaticCraft Compression Chamber recipe list.
 
+
 //Miscellaneous items
 mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11035> * 2], 1, [<GalacticraftCore:item.basicItem:6>], true);     //Copper
+mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11057> * 2], 1, [<GalacticraftCore:item.basicItem:7>], true);     //Tin
 
 //Tier 1 Rocket compressed items
-mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11057> * 2], 1, [<GalacticraftCore:item.basicItem:7>], true);     //Tin
 mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11019> * 2], 1, [<GalacticraftCore:item.basicItem:8>], true);     //Aluminium
 mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11305> * 2], 1, [<GalacticraftCore:item.basicItem:9>], true);     //Steel
 mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11300> * 2], 1, [<GalacticraftCore:item.basicItem:10>], true);     //Bronze
-mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11305> * 1, <gregtech:gt.metaitem.01:11019> * 2, <gregtech:gt.metaitem.01:11300> * 2], 1, [<GalacticraftCore:item.heavyPlating>], true);
+mods.pneumaticcraft.Pressure.addRecipe([<GalacticraftCore:item.basicItem:8> * 2, <GalacticraftCore:item.basicItem:9> * 2, <GalacticraftCore:item.basicItem:10> * 2], 1, [<GalacticraftCore:item.heavyPlating>], true);
 
 //Tier 2 Rocket compressed items
 mods.pneumaticcraft.Pressure.addRecipe([<gregtech:gt.metaitem.01:11340>], 1, [<GalacticraftCore:item.meteoricIronIngot:1>], true);     //Meteoric Iron
