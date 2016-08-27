@@ -63,3 +63,12 @@ recipes.addShaped(cropHarvester, [
     [robotArmHV, circuitEnergyFlow, robotArmHV],
     [pistonElectricHV, machineHullHV, sensorHV],
     [cableElectrum4x, moduleConveyorHV, cableElectrum4x]]);
+	
+//Distillation Tower
+//OutputFluidArray, OutputStack, InputFluid, Time in Ticks, EnergyUsage
+mods.gregtech.DistillationTower.addRecipe([
+ <liquid:helium> * 25],
+ <miscutils:itemHeliumBlob>,
+ <liquid:air> * 20000,
+ 200, 
+ 60);
